@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sk.upjs.ics.android.sweetcontroller.MakingFoodActivity">
+    <item android:id="@+id/set_insulin"
+        android:title="Set insulin"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/set_notifications"
+        android:title="Set Notifications"
+        app:showAsAction="always" />
+
+
+</menu>

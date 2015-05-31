@@ -1,0 +1,86 @@
+
+
+
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="4dp"
+
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ChooseMealActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/breakfastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BREAKFAST"
+        android:textStyle="bold"
+        android:onClick="makeBreakfast"
+        />
+
+    <Button
+        android:id="@+id/lunchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LUNCH"
+        android:textStyle="bold"
+        android:onClick="makeLunch"
+        />
+
+    <Button
+        android:id="@+id/dinnerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DINNER"
+        android:textStyle="bold"
+        android:onClick="makeDinner"
+        />
+
+    <ImageView
+        android:id="@+id/foodImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/food"
+        />
+
+    <Button
+        android:id="@+id/photoBreakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="takePhotoBreakfast"
+        android:text="Your favourite Breakfast :)"
+        />
+
+    <Button
+        android:id="@+id/photoLunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="takePhotoLunch"
+        android:text="Your favourite Lunch :)"
+        />
+
+    <Button
+        android:id="@+id/photoDinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="takePhotoDinner"
+        android:text="Your favourite Dinner :)"
+        />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sk.upjs.ics.android.sweetcontroller" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="15" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomText" >
+        <activity
+            android:name=".FirstScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MakingFoodActivity"
+            android:label="@string/title_activity_making_food"
+            android:parentActivityName=".FirstScreenActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="FirstScreenActivity" />
+        </activity>
+        <activity
+            android:name=".SetInsulinActivity2"
+            android:label="@string/title_activity_set_insulin_activity2" >
+        </activity>
+        <activity
+            android:name=".MakingLunchActivity"
+            android:label="@string/title_activity_making_lunch" >
+        </activity>
+        <activity
+            android:name=".MakingDinnerActivity"
+            android:label="@string/title_activity_making_dinner" >
+        </activity>
+
+        <provider
+            android:name=".BreakfastTableContentProvider"
+            android:authorities="sk.upjs.ics.android.sweetcontroller.BreakfastTableContentProvider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name=".LunchDinnerContentProvider"
+            android:authorities="sk.upjs.ics.android.sweetcontroller.LunchDinnerContentProvider"
+            android:enabled="true"
+            android:exported="false" >
+        </provider>
+
+        <activity
+            android:name=".SetInsulinForBreakfastActivity"
+            android:label="@string/title_activity_set_insulin_for_breakfast" >
+        </activity>
+        <activity
+            android:name=".ChooseMealActivity"
+            android:label="@string/title_activity_choose_meal" >
+        </activity>
+        <activity
+            android:name=".PhotoBreakfastActivity"
+            android:label="@string/title_activity_photo_breakfast" >
+        </activity>
+        <activity
+            android:name=".PhotoLunchActivity"
+            android:label="@string/title_activity_photo_lunch" >
+        </activity>
+        <activity
+            android:name=".PhotoDinnerActivity"
+            android:label="@string/title_activity_photo_dinner" >
+        </activity>
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="@string/title_activity_preference" >
+        </activity>
+        <activity
+            android:name=".MenuBrowserActivity"
+            android:label="@string/title_activity_menu_browser" >
+        </activity>
+    </application>
+
+</manifest>

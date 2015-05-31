@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sk.upjs.ics.android.sweetcontroller.FragmentWithResult">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:freezesText="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="bottom|center"
+        />
+
+    <ListView
+        android:id="@+id/selectedListView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        ></ListView>
+
+
+
+</FrameLayout>
